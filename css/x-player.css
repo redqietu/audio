@@ -21,8 +21,8 @@
     top: 0;
 }
 
-/*wrapper:x-action,x-actions*/
-.t-action , .w-actions{
+/*wrapper:x-action,w-action*/
+.t-action , .w-action{
     float: left;
     margin:0;
     padding:0;
@@ -41,13 +41,13 @@
 }
 
 /*elment:play*/
-.e-action-play{
+.e-play{
     width:75px;
     height:75px;
     background-color: #272727;
     cursor: pointer;
 }
-.e-action-play{
+.e-play{
     background-image: url(../images/icon-play.png);
     background-position: center center;
     background-repeat: no-repeat;
