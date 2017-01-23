@@ -42,13 +42,11 @@
 }
 
 /*elment:play*/
-.e-play{
+.e-expand{
     width:75px;
     height:75px;
     background-color: #272727;
     cursor: pointer;
-}
-.e-expand{
     background-image: url(../images/icon-expand.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -242,16 +240,17 @@
 
 /*element:start*/
 .e-pause{
+    display: none;
     position: absolute;
-    top: 51px;
+    top: 47px;
     left: 201px;
-    height: 16px;
-    width: 10px;
+    height: 23px;
+    width: 16px;
     background-image: url(../images/icon-pause.png);
 }
 .e-play{
     position: absolute;
-    top: 51px;
+    top: 47px;
     left: 201px;
     height: 23px;
     width: 16px;
