@@ -5,10 +5,6 @@
         var player=$('.js-player');
         
         //播放音频
-        if(!window.newsVoiceData){
-            player.css('display','none');
-            return;
-        }
         var audio=new Audio({},{
             'src':newsVoiceData,
             'start':'.e-time--left',
