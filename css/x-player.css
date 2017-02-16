@@ -3,11 +3,19 @@
     width: 503px;
     display: inline-block;
     position: fixed;
-    top: 200px;
+    bottom: 275px;
     left:0;
     font-family:"Microsoft YaHei";
 }
-
+/*wrapper:control*/
+.w-control{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.w-left{
+    left: -482px;
+}
 /*type:icon*/
 .t-icon{
     margin:0;
@@ -46,7 +54,6 @@
     width:75px;
     height:75px;
     background-color: #272727;
-    cursor: pointer;
     background-image: url(../images/icon-expand.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,7 +69,6 @@
     background-image: url(../images/icon-shrink.png);
     background-repeat: no-repeat;
     background-position: center center;
-    cursor: pointer;
 }
 
 /*wapper:full*/
@@ -133,7 +139,7 @@
 .e-plus{
     position: absolute;
     top: 0;
-    right: 1.5px;
+    right: 0px;
     width: 5px;
     height: 8px;
     background-image: url(../images/icon-plus.png);
@@ -173,13 +179,13 @@
     background-image: url(../images/icon-dot.png);
     background-position: center center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 
 /*wapper:progress*/
 .w-progress{
     position: absolute;
     top: 36px;
+    left: 0;
     width:392px;
     height:7px;
 }
@@ -187,7 +193,7 @@
     position: absolute;
     top: 2px;
     left: 0;
-    width:30px;
+    width:0px;
     height:3px;
     background-color: #ffc900;
     z-index: 9;
@@ -196,14 +202,14 @@
     position: absolute;
     top:2px;
     left: 0;
-    width:300px;
+    width:0;
     height:3px;
     background-color: #4d4d4d;
     z-index: 8;
 }
 .e-drag{
     position: absolute;
-    left: 30px;
+    left: 0px;
     top: 0;
     width:7px;
     height:7px;
@@ -211,7 +217,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 10;
-    cursor: pointer;
 }
 .e-all{
     position: absolute;
@@ -257,4 +262,47 @@
     background-image: url(../images/icon-play.png);
     background-position: center center;
     background-repeat: no-repeat;
+}
+/*animation:a-hade*/
+.a-ease{
+    transition:left 0.3s ease 0s; 
+}
+.a-ease-delay{
+    transition: left 0.5s ease 0.3s;
+}
+.active .a-left{
+    left: -95px;
+}
+.active .a-right{
+    left: 0;
+}
+
+.quiet .a-ease{
+    transition:left 0.3s ease 0.5s;
+}
+
+.quiet .a-ease-delay{
+    transition: left 0.5s ease 0s;
+}
+
+.e-click{
+    font-size: 14px;
+    color: #000;
+    clear: both;
+}
+
+.active .e-click{
+    display: none;
+}
+.e-show{
+    width: 20px;
+    height: 75px;
+    background-color:#0c0c0c;
+    background-image: url(../images/icon-show.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.e-expand,.e-show,.e-play,.e-drag,.e-dot,.e-shrink{
+    cursor: pointer;
 }

@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/x-player.css">
+    <script>
+        var newsVoiceData={
+            mp3:'./media/3.mp3'
+        };
+    </script>
 </head>
 <body>
-    <div class="b-player">
-        <div class="w-control c-clearfix">
+    <div class="b-player js-player">
+        <div class="w-control c-clearfix a-ease a-left js-expand">
             <div class="w-action">
-                <div class="t-action e-expand"></div>
+                <div class="e-expand"></div>
             </div>
+            <div class="w-action e-show">
+
+            </div>
+            
+            <div class="e-click">点我播放音乐</div>
+
+        </div>
+        <div class="w-control w-left c-clearfix a-ease-delay a-right">
             <div class="w-action">
                 <div class="w-action w-full">
-                    <div class="t-tip e-error">Loading!</div>
+                    <div class="t-tip e-error"></div>
                     <div class="w-volume">
                         <div class="e-hom"></div>
                         <div class="e-minus"></div>
@@ -32,13 +45,14 @@
                     </div>
                     <div class="e-pause"></div>
                     <div class="e-play"></div>
-                    <div class="t-time e-time">-01:21</div>
-                    <div class="t-time e-time--right">-04:19</div>
+                    <div class="t-time e-time e-time--left">-00:00</div>
+                    <div class="t-time e-time--right">-00:00</div>
                 </div>
-                <div class="t-action e-shrink"></div>
+                <div class="t-action e-shrink js-shrink"></div>
             </div>
         </div>
     </div>
+    <script src="./js/jquery.js"></script>
     <script src="./js/x-player.js"></script>
 </body>
 </html>
